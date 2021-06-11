@@ -8,11 +8,12 @@ y = input("do you want us to redirect you to your anime after the study session(
 if(y):  
     x= input("Enter the anime link you want to watch after studying(p.s. mention the http(s))(p.p.s. if you have no specific anime leave the parameter empty): ")
 
-p =  input("Do you want us to redirect you to your study page after the anime session(p.s. if no, leave the parameter empty): ")
-q = input("Enter the study link you want to be redirected to after watching anime(p.s. mention the http(s))(p.p.s. if you have no specific link leave the parameter empty): ")
+p = input("Do you want us to redirect you to your study page after the anime session(p.s. if no, leave the parameter empty): ")
+if(p):
+    q = input("Enter the study link you want to be redirected to after watching anime(p.s. mention the http(s))(p.p.s. if you have no specific link leave the parameter empty): ")
 
-delay = int(input("Enter first range(in seconds): "))
-delay2 = int(input("Enter second range(in seconds): "))
+delay = int(input("Enter first range(in minutes): "))*60
+delay2 = int(input("Enter second range(in minutes): "))*60
 delay3 = delay2 + int(z)*60
 
 
